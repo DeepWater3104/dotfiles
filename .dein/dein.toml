@@ -36,5 +36,4 @@ repo = 'simeji/winresizer'
 repo = 'preservim/vim-markdown'
 
 [[plugins]]
-repo = 'iamcco/markdown-preview.nvim'
-
+repo = 'previm/previm'
