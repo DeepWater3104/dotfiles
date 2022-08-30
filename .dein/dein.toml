@@ -32,4 +32,9 @@ hook_add = '''
 [[plugins]]
 repo = 'simeji/winresizer'
 
+[[plugins]]
+repo = 'preservim/vim-markdown'
+
+[[plugins]]
+repo = 'iamcco/markdown-preview.nvim'
 
