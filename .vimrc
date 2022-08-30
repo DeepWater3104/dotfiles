@@ -94,6 +94,12 @@ if dein#check_install()
   call dein#install()
 endif
 
+" plugin remove check {{{
+let s:removed_plugins = dein#check_clean()
+if len(s:removed_plugins) > 0
+  call map(s:removed_plugins, "delete(v:val, 'rf')")
+  call dein#recache_runtimepath()
+endif
 " ------------------------------------------------------------
 
 " カラースキーム(任意です)
@@ -130,4 +136,8 @@ nnoremap sv :<C-u>vs<CR><C-w>l
 noremap <C-j> <esc>
 noremap! <C-j> <esc>
 
+let g:vim_markdown_folding_disabled = 1
 
+let g:previm_enable_realtime = 1
+
+let g:previm_open_cmd = 'open -a Google\ Chrome'
