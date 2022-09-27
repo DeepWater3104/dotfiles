@@ -114,6 +114,7 @@ endif
 
 syntax on
 
+
 " , キーで次タブのバッファを表示
 nnoremap <silent> , :bprev<CR>
 " . キーで前タブのバッファを表示
@@ -141,3 +142,5 @@ let g:vim_markdown_folding_disabled = 1
 let g:previm_enable_realtime = 1
 
 let g:previm_open_cmd = 'open -a Google\ Chrome'
+
+nnoremap <C-n> :NERDTree<CR>
