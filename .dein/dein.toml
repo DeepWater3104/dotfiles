@@ -37,3 +37,6 @@ repo = 'preservim/vim-markdown'
 
 [[plugins]]
 repo = 'previm/previm'
+
+[[plugins]]
+repo = 'lazywei/vim-matlab'
