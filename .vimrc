@@ -137,10 +137,13 @@ nnoremap sv :<C-u>vs<CR><C-w>l
 noremap <C-j> <esc>
 noremap! <C-j> <esc>
 
+" about markdown
 let g:vim_markdown_folding_disabled = 1
 
 let g:previm_enable_realtime = 1
 
 let g:previm_open_cmd = 'open -a Google\ Chrome'
 
+
+" call nerdtree with ctl-n 
 nnoremap <C-n> :NERDTree<CR>
