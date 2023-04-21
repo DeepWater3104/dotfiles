@@ -16,7 +16,7 @@ set t_Co=256
 set noswapfile
 
 " ヤンクをクリップボードへ繋ぐ
-set clipboard=unnamed
+set clipboard=unnamedplus
 
 " ビープ音を消す
 set belloff=all
@@ -41,9 +41,6 @@ set list listchars=tab:»-,trail:-,eol:↲,extends:»,precedes:«,nbsp:%
 " 挿入モードでバックスペース削除を有効
 set backspace=indent,eol,start""
 
-"ヤンクをクリップボードへ繋ぐ"
-set clipboard=unnamed
-
 "検索するときに大文字と小文字を区別しない"
 set ignorecase
 
@@ -52,10 +49,8 @@ inoremap {<Enter> {}<Left><CR><ESC><S-o>
 inoremap [<Enter> []<Left><CR><ESC><S-o>
 inoremap (<Enter> ()<Left><CR><ESC><S-o>
 
-" クオーテーションの補完
-inoremap ' ''<LEFT>
-inoremap " ""<LEFT>
-" plugin manager ---------------------------------------------
+
+"plugin manager ---------------------------------------------
 if &compatible
   set nocompatible
 endif
@@ -74,7 +69,7 @@ if &runtimepath !~# '/dein.vim'
 endif
 
 " tomlセット
-let s:toml_dir=expand('~/.dein/')
+let s:toml_dir=expand('~/.vim/plugins/')
 let s:toml=s:toml_dir . 'dein.toml'
 let s:toml_lazy=s:toml_dir . 'dein-lazy.toml'
 
@@ -103,15 +98,15 @@ endif
 " ------------------------------------------------------------
 
 " カラースキーム(任意です)
-if (empty($TMUX))
-  if (has("nvim"))
-    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-  endif
-  if (has("termguicolors"))
-    set termguicolors
-  endif
-endif
-
+"if (empty($TMUX))
+"  if (has("nvim"))
+"    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+"  endif
+"  if (has("termguicolors"))
+"    set termguicolors
+"  endif
+"endif
+"
 syntax on
 
 
