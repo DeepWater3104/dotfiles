@@ -33,9 +33,6 @@ hook_add = '''
 repo = 'simeji/winresizer'
 
 [[plugins]]
-repo = 'preservim/vim-markdown'
-
-[[plugins]]
 repo = 'previm/previm'
 
 [[plugins]]
@@ -47,3 +44,6 @@ hoook_add = '''
 set background = dark
 au MyAutoCmd VimEnter * nested colorscheme hybrid
 '''
+
+[[plugins]]
+repo = 'https://github.com/JuliaEditorSupport/julia-vim'
