@@ -44,3 +44,7 @@ repo = 'lazywei/vim-matlab'
 
 [[plugins]]
 repo = 'https://github.com/JuliaEditorSupport/julia-vim'
+
+
+[[plugins]]
+repo = 'https://github.com/airblade/vim-gitgutter'

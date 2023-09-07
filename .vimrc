@@ -144,6 +144,8 @@ let g:previm_enable_realtime = 1
 
 let g:previm_open_cmd = 'open -a Google\ Chrome'
 
+" emphasize the cursorline"
+set cursorline
 
 " call nerdtree with ctl-n 
 nnoremap <C-n> :NERDTree<CR>
