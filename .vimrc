@@ -1,5 +1,5 @@
 " シェルを指定してください
-set shell=/bin/zsh
+set shell=/bin/bash
 
 " encoding
 set encoding=utf8
@@ -74,7 +74,7 @@ if &runtimepath !~# '/dein.vim'
 endif
 
 " tomlセット
-let s:toml_dir=expand('~/.dein/')
+let s:toml_dir=expand('~/dotfiles/.dein/')
 let s:toml=s:toml_dir . 'dein.toml'
 let s:toml_lazy=s:toml_dir . 'dein-lazy.toml'
 
@@ -105,7 +105,7 @@ endif
 " カラースキーム(任意です)
 if (empty($TMUX))
   if (has("nvim"))
-    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+    let $NVIM_TUI_ENABLE_TRUE_nOLOR=1
   endif
   if (has("termguicolors"))
     set termguicolors
