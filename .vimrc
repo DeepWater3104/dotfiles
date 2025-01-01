@@ -1,5 +1,5 @@
 " シェルを指定してください
-set shell=/bin/zsh
+set shell=/bin/bash
 
 " encoding
 set encoding=utf8
@@ -56,7 +56,7 @@ if &compatible
 endif
 
 " プラグインがインストールされるディレクトリ
-let s:dein_dir = expand('~/.vim/bundles')
+let s:dein_dir = expand('/vol0206/data/hp200139/u12103/.vim/bundles')
 
 " dein.vim本体
 let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
@@ -69,7 +69,7 @@ if &runtimepath !~# '/dein.vim'
 endif
 
 " tomlセット
-let s:toml_dir=expand('~/.vim/plugins/')
+let s:toml_dir=expand('/vol0206/data/hp200139/u12103/dotfiles/.dein/')
 let s:toml=s:toml_dir . 'dein.toml'
 let s:toml_lazy=s:toml_dir . 'dein-lazy.toml'
 
