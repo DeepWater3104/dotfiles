@@ -40,9 +40,6 @@ repo = 'lazywei/vim-matlab'
 
 [[plugins]]
 repo = 'w0ng/vim-hybrid'
-hoook_add = '''
-set background = dark
-au MyAutoCmd VimEnter * nested colorscheme hybrid
 '''
 
 [[plugins]]
