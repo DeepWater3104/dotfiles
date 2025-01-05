@@ -48,3 +48,6 @@ repo = 'https://github.com/JuliaEditorSupport/julia-vim'
 
 [[plugins]]
 repo = 'https://github.com/airblade/vim-gitgutter'
+
+[[plugins]]
+repo = 'https://github.com/w0ng/vim-hybrid'
