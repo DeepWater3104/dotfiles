@@ -6,3 +6,4 @@ local term_opts = { silent = true }
 map("i", "<C-j>", "<Esc>", opts)
 map("v", "<C-j>", "<Esc>", opts)
 map("x", "<C-j>", "<Esc>", opts)
+map("n", "<C-n>", ":NvimTreeToggle<CR>", opts)
