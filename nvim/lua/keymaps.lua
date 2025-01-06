@@ -6,4 +6,11 @@ local term_opts = { silent = true }
 map("i", "<C-j>", "<Esc>", opts)
 map("v", "<C-j>", "<Esc>", opts)
 map("x", "<C-j>", "<Esc>", opts)
+
+--[[ open nvim-tree with C-n ]]
 map("n", "<C-n>", ":NvimTreeToggle<CR>", opts)
+
+--[[ move to the next tab with ]]
+map("n", ".", ":bprevious<CR>", opts)
+--[[ move to the previous tab with ]]
+map("n", ",", ":bprevious<CR>", opts)

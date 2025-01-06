@@ -1,7 +1,7 @@
 local options = {
     encoding = "utf-8",
     fileencoding = "utf-8",
-    --title = true,
+    title = true,
     backup = false,
     clipboard = "unnamedplus",
     ignorecase = true,
