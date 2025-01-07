@@ -99,4 +99,7 @@ return {
     event = "InsertEnter",
     config = true,
   },
+  {
+    "neoclide/coc.nvim",
+  },
 }
