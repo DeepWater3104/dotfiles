@@ -18,7 +18,13 @@ return {
     "folke/tokyonight.nvim",
     lazy = false,
     priority = 1000,
-    opts = {},
+    opts = {
+      --transparent = true,
+    },
+    styles = {
+      --sidebars="transparent",
+      --floats="transparent"
+    },
   },
   {
     "nvim-tree/nvim-tree.lua",
@@ -99,7 +105,10 @@ return {
     event = "InsertEnter",
     config = true,
   },
-  {
-    "neoclide/coc.nvim",
-  },
+  --{
+  --  "neoclide/coc.nvim",
+  --  --config = function()
+  --  --  require("coc.nvim").setup{}
+  --  --end,
+  --},
 }

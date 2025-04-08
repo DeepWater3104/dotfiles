@@ -13,4 +13,4 @@ map("n", "<C-n>", ":NvimTreeToggle<CR>", opts)
 --[[ move to the next tab with ]]
 map("n", ".", ":bprevious<CR>", opts)
 --[[ move to the previous tab with ]]
-map("n", ",", ":bprevious<CR>", opts)
+map("n", ",", ":bnext<CR>", opts)

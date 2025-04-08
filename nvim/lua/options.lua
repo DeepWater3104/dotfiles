@@ -21,6 +21,9 @@ local options = {
 		hlsearch = true,
 		--clipboard = true,
 		expandtab = true,
+    --termguicolors = true,
+    --winblend = 0,
+    --pumblend = 0,
 }
 
 for k, v in pairs(options) do
